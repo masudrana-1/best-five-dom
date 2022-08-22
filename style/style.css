@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(24, 24, 53);
+}
+
 .image-size {
     height: 600px;
 }
