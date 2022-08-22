@@ -5,11 +5,15 @@ document.getElementById('calculate').addEventListener('click', function () {
 
     const totalPlayersCost = perPlayerCost * 5;
 
-    const playerExpenses = document.getElementById('player-expenses');
-    const playerExpensesString = playerExpenses.innerText;
-    const playerExpensesCost = parseFloat(playerExpensesString);
+    // const playerExpenses = document.getElementById('player-expenses');
+    // const playerExpensesString = playerExpenses.innerText;
+    // const playerExpensesCost = parseFloat(playerExpensesString);
 
-    const allPlayerCost = playerExpensesCost + totalPlayersCost;
+    const playerExpenses = document.getElementById('player-expenses');
+
+    const allPlayerExpensesCost = calculate('player-expenses');
+
+    const allPlayerCost = allPlayerExpensesCost + totalPlayersCost;
 
     playerExpenses.innerText = allPlayerCost;
 })

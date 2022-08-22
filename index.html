@@ -88,10 +88,11 @@
                     <h2 class="mb-3">Per player: <input id="per-player" type="number" name=""> </h2>
                     <button id="calculate" class="mb-3 bg-green-600 rounded-xl px-6">Calculate</button>
                     <h2 class="mb-3">Player Expenses: <span id="player-expenses">0,000</span></h2>
-                    <h2 class="mb-3">Manager: <input type="number" name=""></h2>
-                    <h2 class="mb-3">Coach: <input type="number" name=""></h2>
-                    <button id="calculate-total" class="mb-3 bg-green-600 rounded-xl px-6">Calculate Total</button>
-                    <h1 class="mb-3">Total: <span>0,000</span></h1>
+                    <h2 class="mb-3">Manager: <input id="manager-cost" type="number" name=""></h2>
+                    <h2 class="mb-3">Coach: <input id="coach-cost" type="number" name=""></h2>
+                    <button id="calculate-total-amount" class="mb-3 bg-green-600 rounded-xl px-6">Calculate
+                        Total</button>
+                    <h1 class="mb-3">Total: <span id="calculate-total">0,000</span></h1>
                 </div>
             </div>
         </section>
@@ -122,6 +123,7 @@
     <!-- script link  -->
 
     <script src=" ./script/select.js"></script>
+    <script src="./script/utilities.js"></script>
     <script src="./script/calculate.js"></script>
     <script src="./script/total.js"></script>
 </body>
