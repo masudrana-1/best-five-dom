@@ -3,7 +3,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     const perPlayerString = perPlayer.value;
     const perPlayerCost = parseFloat(perPlayerString);
 
-    const totalPlayersCost = perPlayerCost * 5;
+    const totalPlayersCost = perPlayerCost * playersArray.length;
 
     // const playerExpenses = document.getElementById('player-expenses');
     // const playerExpensesString = playerExpenses.innerText;
@@ -11,7 +11,7 @@ document.getElementById('calculate').addEventListener('click', function () {
 
     const playerExpenses = document.getElementById('player-expenses');
 
-    const allPlayerExpensesCost = calculate('player-expenses');
+    const allPlayerExpensesCost = playerExpensesCalculate('player-expenses');
 
     const allPlayerCost = allPlayerExpensesCost + totalPlayersCost;
 

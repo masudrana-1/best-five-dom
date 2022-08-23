@@ -14,7 +14,7 @@ function totalplayer(player) {
 
         li.innerText = players;
         li.classList.add('player');
-        li.classList.add('mb-8')
+        li.classList.add('mb-12')
         li.classList.add('font-bold');
         li.classList.add('text-white');
 

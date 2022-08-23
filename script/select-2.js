@@ -1,21 +1,21 @@
-function select(element) {
+// function select(element) {
 
-    const playerName = element.parentNode.children[0].innerText;
+//     const playerName = element.parentNode.children[0].innerText;
 
-    const list = document.getElementById('list');
+//     const list = document.getElementById('list');
 
-    const li = document.createElement("li");
+//     const li = document.createElement("li");
 
-    li.innerText = playerName;
+//     li.innerText = playerName;
     // li.classList.add('player');
     // li.classList.add('mb-6')
     // li.classList.add('font-bold');
 
-    list.appendChild(li);
+    // list.appendChild(li);
 
-    const btn = document.getElementById('tamim-add').addEventListener('click', function () {
+    // const btn = document.getElementById('tamim-add').addEventListener('click', function () {
 
-    })
+    // })
 
     // document.querySelectorAll('.all-list li');
 
@@ -25,4 +25,4 @@ function select(element) {
 
     // document.button.style.backgroundColor = 'blue';
 
-}
+// }
