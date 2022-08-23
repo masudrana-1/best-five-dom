@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create your own team</title>
 
     <!-- tailwind link  -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,112 +17,172 @@
 
 <body>
 
+    <!-- header  -->
     <header>
-        <div>
-            <img class="w-full image-size bg-zinc-900 opacity-75" src="./image/Bangladeshi-Cricket-History.jpg" alt="">
+        <div class="background text-center">
+            <h1 class="text-7xl font-bold pt-32 pb-5 h-color font-sans">Create your own team</h1>
+            <p class="text-2xl p-color font-serif">Bangladesh's first official foray into international cricket <br>
+                came
+                in
+                the 1979 ICC
+                Trophy in England.
+                On
+                31 March 1986, Bangladesh played its first ODI match, <br> against Pakistan in the Asia Cup. For a long
+                time,
+                football was the most popular sport in Bangladesh, <br> but cricket gradually became very popular –
+                particularly in <br> urban areas – and by the late 1990s had surpassed football.</p>
+
         </div>
     </header>
 
+    <!-- main section  -->
     <main>
         <section class="mt-5">
             <div class="grid grid-cols-4 gap-4 w-11/12 m-auto">
-                <div class="border-zinc-700 bg-green-400 rounded my-4 ">
-                    <img src="./image/tamim (2).jpg" alt="">
+
+                <!-- player- 1  -->
+
+                <div class="border-zinc-700 bg-gray-900 hover:bg-gray-800 rounded-xl my-4 drop-shadow-2xl">
+                    <img class="rounded-xl" src="./image/tamim (2).jpg" alt="">
                     <div class="text-center py-2">
-                        <h1 id="tamim" class="font-bold text-xl mt-3">Tamin Iqbal</h1>
-                        <h2 class="text-lg font-mono mt-3">ODI mathch- 231 | Runs- 8074</h2>
-                        <button class="bg-green-600	rounded-xl w-11/12 px-6 py-2 mt-3">Select</button>
+                        <h1 id="tamim" class="font-bold text-xl mt-3 text-white">Tamin Iqbal</h1>
+                        <h2 class="text-lg font-mono mt-3 text-white">Test match- 69 | Runs- 5082</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">ODI match- 231 | Runs- 8074</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">T20 match- 78 | Runs- 1758</h2>
+                        <button id="tamim-add" onclick="select(this)"
+                            class="bg-green-600 hover:bg-green-900	rounded-xl w-11/12 px-6 py-2 mt-3 text-white">Selected</button>
                     </div>
                 </div>
-                <div class="border-zinc-700 bg-green-400 rounded my-4">
-                    <img src=" ./image/liton.jpg" alt="">
+
+                <!-- player - 2 -->
+
+                <div class="border-zinc-700 bg-gray-900 rounded-xl my-4">
+                    <img class="rounded-xl" src=" ./image/liton.jpg" alt="">
                     <div class="text-center py-2">
-                        <h1 id="liton" class="font-bold text-xl mt-3">Litton Das</h1>
-                        <h2 class="text-lg font-mono mt-3">ODI mathch- 57 | Runs- 1835</h2>
-                        <button class="bg-green-600	rounded-xl w-11/12 px-6 py-2 mt-3">Select</button>
+                        <h1 id="liton" class="font-bold text-xl mt-3 text-white">Litton Das</h1>
+                        <h2 class="text-lg font-mono mt-3 text-white">Test match- 35 | Runs- 2112</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">ODI match- 57 | Runs- 1835</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">T20 match- 54 | Runs- 1081</h2>
+                        <button id="liton-add" onclick="select(this)"
+                            class="bg-green-600 hover:bg-green-900 rounded-xl w-11/12 px-6 py-2 mt-3 text-white">Selected</button>
                     </div>
                 </div>
-                <div class="border-zinc-700 bg-green-400 rounded my-4">
-                    <img src=" ./image/sakib.jpg" alt="">
+
+                <!-- player - 3 -->
+
+                <div class="border-zinc-700 bg-gray-900 rounded-xl my-4">
+                    <img class="rounded-xl" src=" ./image/sakib.jpg" alt="">
                     <div class="text-center py-2">
-                        <h1 id="sakib" class="font-bold text-xl mt-3">Shakib Al Hasan</h1>
-                        <h2 class="text-lg font-mono mt-3">ODI mathch- 221 | Runs- 6755</h2>
-                        <button class="bg-green-600	rounded-xl w-11/12 px-6 py-2 mt-3">Select</button>
+                        <h1 id="sakib" class="font-bold text-xl mt-3 text-white">Shakib Al Hasan</h1>
+                        <h2 class="text-lg font-mono mt-3 text-white">Test match- 63 | Runs- 4251</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">ODI match- 221 | Runs- 6755</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">T20 match- 99 | Runs- 2010</h2>
+                        <button id="sakib-add" onclick="select(this)"
+                            class="bg-green-600 hover:bg-green-900	rounded-xl w-11/12 px-6 py-2 mt-3 text-white">Selected</button>
                     </div>
                 </div>
-                <div class="bg-green-400 border-zinc-700 my-4 text-center p-4 rounded">
-                    <h1 class="font-bold">Select players</h1>
-                    <ul id="list">
+
+                <!-- player selection area  -->
+
+                <div class="bg-gray-900 border-zinc-700 my-4 text-center p-4 rounded-xl">
+                    <h1 class="font-bold mb-3 text-3xl text-white">Selected players- <span id="players-count">0</span>
+                    </h1>
+                    <hr class="mb-8">
+                    <ul class="all-list" id="list">
 
                     </ul>
 
                 </div>
             </div>
+
+            <!-- player - 4 -->
+
             <div class="grid grid-cols-4 gap-4 w-11/12 m-auto">
-                <div class="border-zinc-700 bg-green-400 rounded my-4">
-                    <img src=" ./image/Afif.jpg" alt="">
+                <div class="border-zinc-700 bg-gray-900 rounded-xl my-4">
+                    <img class="rounded-xl" src=" ./image/Afif.jpg" alt="">
                     <div class="text-center py-2">
-                        <h1 id="afif" class="font-bold text-xl mt-3">Afif Hossain</h1>
-                        <h2 class="text-lg font-mono mt-3">T20 mathch- 47 | Runs- 698</h2>
-                        <button class="bg-green-600	rounded-xl w-11/12 px-6 py-2 mt-3">Select</button>
+                        <h1 id="afif" class="font-bold text-xl mt-3 text-white">Afif Hossain</h1>
+                        <h2 class="text-lg font-mono mt-3 text-white">Test match- - | Runs- -</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">ODI match- 19 | Runs- 481</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">T20 match- 47 | Runs- 698</h2>
+                        <button id="afif-add" onclick="select(this)"
+                            class="bg-green-600 hover:bg-green-900	rounded-xl w-11/12 px-6 py-2 mt-3 text-white">Selected</button>
                     </div>
                 </div>
-                <div class="border-zinc-700 bg-green-400 rounded my-4">
-                    <img src=" ./image/mostafiz.jpg" alt="">
+
+                <!-- player - 5 -->
+
+                <div class="border-zinc-700 bg-gray-900 rounded-xl my-4">
+                    <img class="rounded-xl" src=" ./image/mostafiz.jpg" alt="">
                     <div class="text-center py-2">
-                        <h1 id="fiz" class="font-bold text-xl mt-3">Mustafizur Rahman</h1>
-                        <h2 class="text-lg font-mono mt-3">ODI mathch- 57 | Runs- 1835</h2>
-                        <button class="bg-green-600	rounded-xl w-11/12 px-6 py-2 mt-3">Select</button>
+                        <h1 id="fiz" class="font-bold text-xl mt-3 text-white">Mustafizur Rahman</h1>
+                        <!-- <ul>
+                            <li id="fiz" class="font-bold text-xl mt-3">Mustafizur Rahman</li>
+                        </ul> -->
+                        <h2 class="text-lg font-mono mt-3 text-white">Test match- 15 | Wkts- 31</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">ODI match- 79 | Wkts- 139</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">T20 match- 69 | Wkts- 91</h2>
+                        <button id="fiz-add" onclick="select(this)"
+                            class="bg-green-600 hover:bg-green-900	rounded-xl w-11/12 px-6 py-2 mt-3 text-white">Selected</button>
                     </div>
                 </div>
-                <div class="border-zinc-700 bg-green-400 rounded my-4">
-                    <img src=" ./image/musfiq.jpg" alt="">
+
+                <!-- player - 6 -->
+
+                <div class="border-zinc-700 bg-gray-900 rounded-xl my-4">
+                    <img class="rounded-xl" src=" ./image/musfiq.jpg" alt="">
                     <div class="text-center py-2">
-                        <h1 id="musfiq" class="font-bold text-xl mt-3">Mushfiqur Rahim</h1>
-                        <h2 class="text-lg font-mono mt-3">ODI mathch- 221 | Runs- 6755</h2>
-                        <button class="bg-green-600	rounded-xl w-11/12 px-6 py-2 mt-3">Select</button>
+                        <h1 id="musfiq" class="font-bold text-xl mt-3 text-white">Mushfiqur Rahim</h1>
+                        <!-- <ul>
+                            <li id="musfiq" class="font-bold text-xl mt-3">Mushfiqur Rahim</li>
+                        </ul> -->
+                        <h2 class="text-lg font-mono mt-3 text-white">Test match- 82 | Runs- 5235</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">ODI match- 236 | Runs- 6774</h2>
+                        <h2 class="text-lg font-mono mt-3 text-white">T20 match- 100 | Runs- 1495</h2>
+                        <button id="rahim-add" onclick="select(this)"
+                            class="bg-green-600 hover:bg-green-900	rounded-xl w-11/12 px-6 py-2 mt-3 text-white">Selected</button>
                     </div>
                 </div>
-                <div class="bg-green-400 border-zinc-700 my-4 text-center p-4 rounded">
-                    <h1 class="mb-3">Budget</h1>
-                    <h2 class="mb-3">Per player: <input id="per-player" type="number" name=""> </h2>
-                    <button id="calculate" class="mb-3 bg-green-600 rounded-xl px-6">Calculate</button>
-                    <h2 class="mb-3">Player Expenses: <span id="player-expenses">0,000</span></h2>
-                    <h2 class="mb-3">Manager: <input id="manager-cost" type="number" name=""></h2>
-                    <h2 class="mb-3">Coach: <input id="coach-cost" type="number" name=""></h2>
-                    <button id="calculate-total-amount" class="mb-3 bg-green-600 rounded-xl px-6">Calculate
+
+                <!-- calculation area  -->
+
+                <div class="bg-gray-900 border-zinc-700 my-4 text-center p-4 rounded-xl">
+                    <h1 class="mb-4 text-2xl text-white">Budget</h1>
+                    <hr>
+                    <h2 class="text-white mt-8">Per player: <input class="rounded-xl px-4 text-black w-2/4"
+                            id="per-player" type="number" name=""> </h2>
+                    <button id="calculate"
+                        class="my-8 bg-green-600 hover:bg-green-900 rounded-xl px-6 text-white">Calculate</button>
+                    <h2 class="mb-6 text-xl text-white">Player Expenses: <span id="player-expenses">0,000</span></h2>
+                    <h2 class="mb-6 text-white">Manager: <input class="rounded-xl px-4 text-black w-2/4"
+                            id="manager-cost" type="number" name=""></h2>
+                    <h2 class=" text-white">Coach: <input class="rounded-xl px-4 text-black w-2/4" id="coach-cost"
+                            type="number" name="">
+                    </h2>
+                    <button id="calculate-total-amount"
+                        class="my-6 bg-green-600 hover:bg-green-900 rounded-xl px-6 text-white">Calculate
                         Total</button>
-                    <h1 class="mb-3">Total: <span id="calculate-total">0,000</span></h1>
+                    <h1 class="text-xl text-white">Total: <span id="calculate-total">0,000</span></h1>
                 </div>
             </div>
         </section>
     </main>
 
+    <footer>
+        <section>
+            <h1></h1>
+            <div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </section>
+    </footer>
 
 
     <!-- script link  -->
 
     <script src=" ./script/select.js"></script>
+    <!-- <!-- <!-- <script src="./script/select-2.js"></script  -->
+    <!-- <script src="./script/select3.js"></script> -->
     <script src="./script/utilities.js"></script>
     <script src="./script/calculate.js"></script>
     <script src="./script/total.js"></script>

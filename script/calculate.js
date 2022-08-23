@@ -16,4 +16,6 @@ document.getElementById('calculate').addEventListener('click', function () {
     const allPlayerCost = allPlayerExpensesCost + totalPlayersCost;
 
     playerExpenses.innerText = allPlayerCost;
+
+    perPlayer.value = '';
 })

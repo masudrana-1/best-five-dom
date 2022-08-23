@@ -17,5 +17,8 @@ document.getElementById('calculate-total-amount').addEventListener('click', func
 
     totalCalculate.innerText = totalCost;
 
+    managerCost.value = '';
+    coachCost.value = '';
+
 
 })

@@ -1,7 +1,25 @@
+/* * {
+    color: white;
+} */
+
+
 body {
-    background-color: rgb(24, 24, 53);
+    background-color: rgb(0, 30, 55);
 }
 
-.image-size {
-    height: 600px;
+.h-color {
+    color: rgb(10, 252, 171);
+}
+
+.p-color {
+    color: rgb(208, 231, 202);
+}
+
+.btn {
+    background-color: aliceblue;
+}
+
+.background {
+    background-image: url("/image/Screenshot\ 2022-08-23\ 113157.png");
+    height: 500px;
 }
