@@ -14,3 +14,21 @@ body {
 .p-color {
     color: rgb(208, 231, 202);
 }
+
+@media only screen and (max-width: 372px) {
+    .background {
+        height: 1000px;
+    }
+}
+
+@media only screen and (min-width: 373px) and (max-width: 607px) {
+    .background {
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 608px) and (max-width: 775px) {
+    .background {
+        height: 600px;
+    }
+}
