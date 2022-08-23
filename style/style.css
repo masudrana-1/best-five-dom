@@ -1,10 +1,10 @@
-/* * {
-    color: white;
-} */
-
-
 body {
-    background-color: rgb(0, 30, 55);
+    background-color: rgb(69, 237, 97);
+}
+
+.background {
+    background-image: url("/image/Screenshot\ 2022-08-23\ 113157.png");
+    height: 500px;
 }
 
 .h-color {
@@ -13,13 +13,4 @@ body {
 
 .p-color {
     color: rgb(208, 231, 202);
-}
-
-.btn {
-    background-color: aliceblue;
-}
-
-.background {
-    background-image: url("/image/Screenshot\ 2022-08-23\ 113157.png");
-    height: 500px;
 }
